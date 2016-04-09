@@ -24,7 +24,7 @@ if (argument1 === "my-tweets") {
 })
 }
 
-if (argument1 === "spotify-this-song") {
+if (argument1 == "spotify-this-song") {
 	var searches = process.argv[3];
 	spotify.search({ type: 'track', query: 'argument1' }, function(err, data) {
     if ( err ) {
